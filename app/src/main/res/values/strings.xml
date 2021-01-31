@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Yilmazturk_Alper_CarShowroom</string>
+    <string name="add_car">Add Car</string>
+    <string name="enter_brand">Enter Brand</string>
+    <string name="enter_model">Enter Model</string>
+    <string name="enter_year">Enter Year</string>
+    <string name="enter_km">Enter Km</string>
+    <string name="enter_price">Enter Price ₺</string>
+    <string name="edit_car">Edit Car</string>
+    <string name="brand">Brand</string>
+    <string name="model">Model</string>
+    <string name="year">Year</string>
+    <string name="km">Km</string>
+    <string name="price">Price</string>
+    <string name="edit">EDIT</string>
+    <string name="sold">Sold</string>
+    <string name="add">ADD</string>
+    <string name="action_bar_add">add</string>
+</resources>

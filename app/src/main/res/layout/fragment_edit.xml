@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/fragmentEditCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin40"
+        android:text="@string/edit_car"
+        android:textSize="@dimen/text_size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editBrandTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin29"
+        android:layout_marginTop="@dimen/margin138"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editBrandEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintStart_toStartOf="@+id/editBrandTextView"
+        app:layout_constraintTop_toBottomOf="@+id/editBrandTextView" />
+
+    <TextView
+        android:id="@+id/editModelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model"
+        app:layout_constraintBottom_toTopOf="@+id/editModelEditText"
+        app:layout_constraintStart_toStartOf="@+id/editModelEditText" />
+
+    <EditText
+        android:id="@+id/editModelEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin29"
+        android:layout_marginBottom="@dimen/margin27"
+        android:ems="8"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toTopOf="@+id/editKmTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/editYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin29"
+        android:layout_marginTop="@dimen/margin27"
+        android:text="@string/year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBrandEditText" />
+
+    <EditText
+        android:id="@+id/editYearEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin1"
+        android:ems="8"
+        android:textSize="@dimen/text_size15"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editYearTextView"
+        app:layout_constraintTop_toBottomOf="@+id/editYearTextView" />
+
+    <TextView
+        android:id="@+id/editKmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/km"
+        app:layout_constraintBottom_toTopOf="@+id/editKmEditText"
+        app:layout_constraintStart_toStartOf="@+id/editKmEditText" />
+
+    <EditText
+        android:id="@+id/editKmEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin29"
+        android:ems="8"
+        android:inputType="number"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editYearEditText" />
+
+    <TextView
+        android:id="@+id/editPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin29"
+        android:layout_marginTop="@dimen/margin27"
+        android:text="@string/price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editYearEditText" />
+
+    <EditText
+        android:id="@+id/editPriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:textSize="@dimen/text_size15"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editPriceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/editPriceTextView" />
+
+    <CheckBox
+        android:id="@+id/soldCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sold"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toBottomOf="@+id/editPriceEditText"
+        app:layout_constraintStart_toStartOf="@+id/editKmEditText" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin9"
+        android:text="@string/edit"
+        android:layout_marginTop="@dimen/margin50"
+        app:layout_constraintTop_toBottomOf="@id/soldCheckBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

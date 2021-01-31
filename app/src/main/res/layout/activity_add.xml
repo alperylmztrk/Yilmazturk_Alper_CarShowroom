@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/activityAddCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin50"
+        android:text="@string/add_car"
+        android:textSize="@dimen/text_size24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addBrandEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin29"
+        android:layout_marginTop="@dimen/margin141"
+        android:layout_marginEnd="@dimen/margin29"
+        android:layout_marginBottom="@dimen/margin45"
+        android:ems="8"
+        android:hint="@string/enter_brand"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toTopOf="@+id/addYearEditText"
+        app:layout_constraintEnd_toStartOf="@+id/addModelEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addModelEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin141"
+        android:layout_marginEnd="@dimen/margin29"
+        android:layout_marginBottom="@dimen/margin45"
+        android:ems="8"
+        android:hint="@string/enter_model"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toTopOf="@+id/addKmEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addBrandEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addYearEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin29"
+        android:layout_marginEnd="@dimen/margin29"
+        android:layout_marginBottom="@dimen/margin333"
+        android:ems="8"
+        android:hint="@string/enter_year"
+        android:inputType="number"
+        android:textSize="@dimen/text_size15"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addKmEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBrandEditText" />
+
+    <EditText
+        android:id="@+id/addKmEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin29"
+        android:layout_marginBottom="@dimen/margin333"
+        android:ems="8"
+        android:hint="@string/enter_km"
+        android:inputType="number"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addYearEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addModelEditText" />
+
+    <EditText
+        android:id="@+id/addPriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin250"
+        android:ems="8"
+        android:hint="@string/enter_price"
+        android:inputType="number"
+        android:textSize="@dimen/text_size15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin78"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPriceEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
